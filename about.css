@@ -1,0 +1,167 @@
+body{
+    background: linear-gradient(90deg, #EBECFFFF 0%, #BDC2FFFF 35%, #8C96FFFF 100%);
+    font-family:"Urbanist";
+}
+.header{
+    background: linear-gradient(90deg, rgb(222, 223, 254) 0%, rgb(134, 143, 252) 35%, #8C96FFFF 100%);
+    width: 100vw;
+    height: 5rem;
+    box-shadow: 0 3px 3px #6272A6;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: fixed;
+    top: 0;
+}
+#logo{
+    width: 5rem;
+    height: 5rem;
+}
+.nav , .button{
+    align-items: baseline;
+}
+.link{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-content: center;
+    margin: 2rem 0 0 5rem;
+}
+.li{
+    margin-right: 5rem;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    border-radius:5px ;
+}
+.btn{
+    width: 3.5rem;
+    height: 1.5rem;
+    margin: 0.5rem;
+    border-radius: 5px;
+    border: 1px solid
+    grey;
+    opacity: 0.8;
+    font-size: medium;
+    position: fixed;
+    top: 1.5rem;
+}
+#signin{
+    right: 5rem;
+}
+#login{
+    right: 0.5rem;
+}
+button a{
+    color: black;
+    text-decoration: none;
+}
+@media screen and (max-width:320px){
+    .btn{
+        font-size: small;
+    }
+    #signin{
+        width: 2.8rem;
+        right: 2.8rem;
+    }
+    #login{
+        width: 2.5rem;
+        right: 2px;
+    }
+}
+@media screen and (min-width:320px) and (max-width:768px) {
+    .link{
+        margin: 2rem 0 0 0;
+    }
+    .li{
+        margin-right: 0.5rem;
+    }
+}
+/* main */
+main{
+    margin-top: 5rem;
+}
+.box{
+    width: 60%;
+    height: 30%;
+    margin: 10% 10% 0 10%; 
+    background-color: #2B4945;
+    border: 1px solid grey;
+    border-radius: 10px;
+    transition: 2s;
+}
+.fig{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    flex-direction: column;
+}
+.img{
+    display: flex;
+    flex-wrap: wrap;;
+    width: 80%;
+    height: 50%;
+    margin: 2rem;
+}
+figcaption{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1rem 0 3rem 5rem;
+    width: 50%;
+}
+figcaption:hover{
+    transform: scale(1.1);
+}
+/* responsive */
+
+
+/* footer */
+footer::before{
+    content: '';
+    width: 100%;
+    border-bottom: solid 1px #fff;
+}
+footer{
+    height: 20rem;
+    margin-top: 5rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    position: relative;
+}
+.footerm{
+    display: flex;
+    flex-direction: row;
+}
+.contact{
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    left: 5rem;
+    bottom: 5rem;
+}
+.blog{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    position: absolute;
+    left: 50%;
+    bottom: 2rem;
+}
+li > a {
+    text-decoration: none;
+    color: black;
+}
+/* responsive */
+
+@media screen and (min-width:320px) and (max-width:426px) {
+    .contact{
+        font-size: small;
+        left: 2rem;
+        bottom: 2rem;
+    }
+    .blog{
+        font-size: small;
+        left: 48%;
+    }
+}

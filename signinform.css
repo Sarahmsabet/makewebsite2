@@ -1,0 +1,293 @@
+body{
+    background: linear-gradient(90deg, #EBECFFFF 0%, #BDC2FFFF 35%, #8C96FFFF 100%);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    color: rgb(88, 87, 87);
+}
+form input{
+    opacity: 0.4;
+}
+form{
+    font-family:"Urbanist";
+    font-weight: 500;
+    margin-top: 4rem;
+    width: 25rem;
+    height: 32rem;
+    background-color: rgba(240, 248, 255, 0.551);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    box-shadow: 2px 2px 10px rgba(140, 150, 255, 0.659);
+    position: relative;
+}
+div{
+    position: absolute;
+    border-radius: 10px;
+}
+#first{
+    top: 1rem;
+    right: -1rem;
+    width: 4.5rem;
+    height: 4.5rem;
+    background-color: rgba(140, 150, 255, 0.659);
+    z-index: 1;
+}
+#second{
+    top: -2rem;
+    right: -2rem;
+    width: 5rem;
+    height: 5rem;
+    background-color: rgba(140, 150, 255, 0.659);
+    z-index: 1;
+}
+#third{
+    top: 5rem;
+    left:-2rem;
+    width: 4rem;
+    height: 4rem;
+    background-color: rgba(140, 150, 255, 0.659);
+    z-index: 1;
+}
+#forth{
+    bottom: -1.5rem;
+    left: 2rem;
+    width: 4.5rem;
+    height: 4.5rem;
+    background-color: rgba(140, 150, 255, 0.659);
+    z-index: 1;
+}
+#fifth{
+    bottom: -2rem;
+    right: -1rem ;
+    width: 4rem;
+    height: 4rem;
+    background-color: rgba(140, 150, 255, 0.659);
+    z-index: 1;
+}
+.inputs{
+    margin-top: 1rem;
+    width: 18rem;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+input[type="text"]{
+    margin-top: 1rem;
+    margin-left: 0.5rem;
+    height: 2rem;
+    width: 12rem;
+    border: 1px solid grey;
+    border-radius: 10px;
+}
+#birth{
+    margin-left: 2.5rem;
+}
+input[type="date"]{
+    margin-top: 1rem;
+    margin-left: 0.5rem;
+    height: 2rem;
+    width: 12rem;
+    border: 1px solid grey;
+    border-radius: 10px;
+}
+#gender{
+    margin-right: 2rem;
+}
+#female{
+    margin-right: 2rem;
+}
+input[type="email"]{
+    margin-top: 1rem;
+    margin-left: 2rem;
+    height: 2rem;
+    width: 12rem;
+    border: 1px solid grey;
+    border-radius: 10px;
+}
+input[type="tel"]{
+    margin-top: 1rem;
+    margin-left: 1.8rem;
+    height: 2rem;
+    width: 12rem;
+    border: 1px solid grey;
+    border-radius: 10px;
+}
+.password{
+    margin-top: 1rem;
+    margin-left: 0.5rem;
+    height: 2rem;
+    width: 12rem;
+    border: 1px solid grey;
+    border-radius: 10px;
+}
+input[type="submit"]{
+    margin-top: 1rem;
+    margin-left: 0.5rem;
+    height: 2rem;
+    width: 5rem;
+    border: 1px solid grey;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 0.5rem;
+    right: 2rem;
+    opacity: 0.8;
+}
+
+
+/* responsive */
+
+
+@media screen and (min-width:1025px) {
+    form{
+        height: 35rem;
+        margin-top: 5rem ;
+    }
+    .inputs{
+        margin-top: 3rem;
+    }
+}
+@media screen and (max-width:426px) {
+    body{
+        background: linear-gradient(90deg,#EBECFFFF 0%, #BDC2FFFF 35%, #8C96FFFF 100%);
+        display: flex;
+        flex-wrap: wrap;
+        color: rgb(111, 111, 111);
+        height: auto;
+    }
+    form input{
+        opacity: 0.4;
+    }
+    form{
+        margin-top: 4rem;
+        width: 17rem;
+        height: 30rem;
+        background-color: rgba(240, 248, 255, 0.551);
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        box-shadow: 2px 2px 10px rgba(140, 150, 255, 0.659);
+        position: relative;
+    }
+    div{
+        position: absolute;
+    }
+    #first{
+        top: 1rem;
+        right: -0.5rem;
+        width: 1.5rem;
+        height: 1.5rem;
+        background-color: rgba(140, 150, 255, 0.659);
+        z-index: 1;
+        border-radius: 5px;
+        
+    }
+    #second{
+        top: -0.5rem;
+        right: -1rem;
+        width: 2rem;
+        height: 2rem;
+        background-color: rgba(181, 187, 251, 0.767);
+        z-index: 1;
+        border-radius: 5px;
+    }
+    #third{
+        top: 5rem;
+        left: -1rem;
+        width: 1.5rem;
+        height: 1.5rem;
+        background-color: rgba(181, 187, 251, 0.767);
+        z-index: 1;
+        border-radius: 5px;
+    }
+    #forth{
+        bottom: -0.5rem;
+        left: 2rem;
+        width: 1.5rem;
+        height: 1.5rem;
+        background-color: rgba(140, 150, 255, 0.659);
+        z-index: 1;
+        border-radius: 5px;
+    }
+    #fifth{
+        bottom: 0.5rem;
+        right: 0.5rem;
+        width: 2.5rem;
+        height: 2.5rem;
+        background-color: rgba(140, 150, 255, 0.659);
+        z-index: 1;
+        border-radius: 5px;
+    }
+    .inputs{
+        margin-top: 1.5rem;
+        align-items: center;
+        margin-bottom: 1rem;
+    }
+    label{
+        margin-left: 1rem;
+    }
+    input[type="text"]{
+        margin-top: 0.3rem;
+        margin-left: 0.5rem;
+        height: 2rem;
+        width: 9rem;
+        border: 1px solid grey;
+        border-radius: 10px;
+    }
+    #birth{
+        margin-left: 2.7rem;
+    }
+    input[type="date"]{
+        margin-top: 1rem;
+        height: 2rem;
+        width: 9rem;
+        border: 1px solid grey;
+        border-radius: 10px;
+    }
+    #gender{
+        margin-right: 0.1rem;
+    }
+    #female{
+        margin-right: 0.8rem;
+    }
+    input[type="email"]{
+        margin-top: 1rem;
+        margin-left: 2.5rem;
+        height: 2rem;
+        width: 9rem;
+        border: 1px solid grey;
+        border-radius: 10px;
+    }
+    input[type="tel"]{
+        margin-top: 1rem;
+        margin-left: 2.2rem;
+        height: 2rem;
+        width: 9rem;
+        border: 1px solid grey;
+        border-radius: 10px;
+    }
+    .password{
+        margin-top: 1rem;
+        margin-left: 0.5rem;
+        height: 2rem;
+        width: 9rem;
+        border: 1px solid grey;
+        border-radius: 10px;
+    }
+    input[type="submit"]{
+        margin-top: 4rem;
+        margin-left: 0.5rem;
+        height: 2rem;
+        width: 5rem;
+        border: 1px solid grey;
+        border-radius: 10px;
+        position: absolute;
+        bottom: 1.5rem;
+        right: 1.8rem;
+        opacity: 0.8;
+    }
+}
